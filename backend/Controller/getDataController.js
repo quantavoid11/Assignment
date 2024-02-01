@@ -1,5 +1,5 @@
 
-import {connectToDb, createTableAndFetchData, getTickerData} from "../database.js";
+import { getTickerData} from "../database.js";
 export const getDataController=async(req,res)=>{
     try{
         try {
