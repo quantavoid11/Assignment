@@ -25,7 +25,7 @@ export const connectToDb=async ()=> {
 }
 
 
- export const createTableAndFetchData=async ()=> {
+ export const createTable=async ()=> {
      const createTable = `
   CREATE TABLE IF NOT EXISTS ticker_data (
     id SERIAL PRIMARY KEY,
@@ -44,11 +44,13 @@ export const connectToDb=async ()=> {
     } catch (error) {
         console.log("Error Creating table", error);
     }
+
+}
+export const fetchData=async ()=>{
     try{
         const response=await axios.get('https://api.wazirx.com/api/v2/tickers');
         const tickers=response.data;
         const key=Object.values(tickers);
-        console.log(key);
         for(let i=0;i<10;i++){
             const ticker = key[i];
             console.log(ticker)
@@ -84,9 +86,7 @@ export const connectToDb=async ()=> {
     catch (error){
         console.log("Error fetching data",error);
     }
-
 }
-
 export const getTickerData=async ()=>{
     const query = 'SELECT * FROM ticker_data LIMIT 10;';
     try {

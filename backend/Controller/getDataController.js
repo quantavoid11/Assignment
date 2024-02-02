@@ -1,6 +1,7 @@
 
-import { getTickerData} from "../database.js";
+import {fetchData, getTickerData} from "../database.js";
 export const getDataController=async(req,res)=>{
+    await fetchData();
     try{
         try {
             const storedData = await getTickerData();
