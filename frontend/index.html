@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>HodlInfo</title>
+</head>
+<body>
+    <div id="root">
+        <div class="App">
+            <div class="theme-dark">
+                <div style="padding: 20px 30px 0">
+                    <div class="align-items-center justify-content-sm-center row">
+                        <div class="text-center-sm col-12 col-sm-7 col-md-5 col-lg-4">
+                            <a href="/">
+                                <div class="padding-none text-center-xs col-12 col-sm-12 col-md-11 col-lg-11">
+                                    <img src="/images/title.png" class="fiat-logo" style="padding: 10px;">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="text-center padding-none col-12 col-sm-12 col-md-2 col-lg-4">
+                            <div class="btn-group">
+                                <button type="button" aria-haspopup="true" aria-expanded="false" class="header-button dropdown-toggle btn btn-secondary">INR</button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                    <a value="INR" tabindex="0" role="menuitem" class="dropdown-item" href="/BTC-INR">INR</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <button type="button" aria-haspopup="true" aria-expanded="false" class="header-button dropdown-toggle btn btn-secondary">BTC</button>
+                                <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu">
+                                    <a value="BTC" tabindex="0" role="menuitem" class="dropdown-item" href="/BTC-INR">BTC</a>
+                                    <a value="ETH" tabindex="0" role="menuitem" class="dropdown-item" href="/ETH-INR">ETH</a>
+                                    <a value="USDT" tabindex="0" role="menuitem" class="dropdown-item" href="/USDT-INR">USDT</a>
+                                    <a value="XRP" tabindex="0" role="menuitem" class="dropdown-item" href="/XRP-INR">XRP</a>
+                                    <a value="TRX" tabindex="0" role="menuitem" class="dropdown-item" href="/TRX-INR">TRX</a>
+                                    <a value="DASH" tabindex="0" role="menuitem" class="dropdown-item" href="/DASH-INR">DASH</a>
+                                    <a value="ZEC" tabindex="0" role="menuitem" class="dropdown-item" href="/ZEC-INR">ZEC</a>
+                                    <a value="XEM" tabindex="0" role="menuitem" class="dropdown-item" href="/XEM-INR">XEM</a>
+                                    <a value="IOST" tabindex="0" role="menuitem" class="dropdown-item" href="/IOST-INR">IOST</a>
+                                    <a value="WIN" tabindex="0" role="menuitem" class="dropdown-item" href="/WIN-INR">WIN</a>
+                                    <a value="BTT" tabindex="0" role="menuitem" class="dropdown-item" href="/BTT-INR">BTT</a>
+                                    <a value="WRX" tabindex="0" role="menuitem" class="dropdown-item" href="/WRX-INR">WRX</a>
+                                </div>
+                            </div>
+                            <div class="btn-group">
+                                <a target="_blank" href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&amp;utm_medium=affiliate&amp;utm_campaign=regnow-btn" type="button" aria-haspopup="true" aria-expanded="false" class="header-button btn btn-secondary">BUY BTC</a>
+                            </div>
+                        </div>
+                        <div class="right-header col-12 col-sm-12 col-md-5 col-lg-4">
+                            <div class="d-inline-flex flex-wrap align-items-center justify-content-center">
+                                <div class="progress-bar-wrapper">
+                                    <svg class="CircularProgressbar " viewBox="0 0 100 100" data-test-id="CircularProgressbar">
+                                        <path class="CircularProgressbar-trail" d="M 50,50m 0,-46a 46,46 0 1 1 0,92a 46,46 0 1 1 0,-92" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 0px;">
+                                        </path>
+                                        <path class="CircularProgressbar-path" d="M 50,50m 0,-46a 46,46 0 1 1 0,92a 46,46 0 1 1 0,-92" stroke-width="8" fill-opacity="0" style="stroke-dasharray: 289.027px, 289.027px; stroke-dashoffset: 57.8053px;">
+                                        </path>
+                                        <text class="CircularProgressbar-text" x="50" y="50">48</text>
+                                    </svg>
+                                </div>
+                                <a class="color-white" href="/connect/telegram">
+                                    <div class="d-flex telegram-logo-text header-telegram-button btn align-items-center pointer color-white">
+                                        <div class="d-inline-block">
+                                            <img src="./images/telegram.png" class="telegram-logo">
+                                        </div>
+                                        <div class="text-nowrap d-inline-block color-white">Connect Telegram</div>
+                                    </div>
+                                </a>
+                                <div class="margin-10 d-inline-block">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round">
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="padding-bottom-50">
+                    <div class="container-fluid " style="padding: 0px 30px;">
+                        <div class="d-flex justify-content-around align-items-center average-header" style="padding: 10px 0px;">
+                            <div class="text-center">
+                                <div class="average-header-maintext color-green">0.81 %</div>
+                                <div class="average-header-subHeading">5 Mins</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="average-header-maintext color-green">1.53 %</div>
+                                <div class="average-header-subHeading">1 Hour</div>
+                            </div>
+                            <div style="max-width: 40%;">
+                                <div class="text-center  average-block">
+                                    <div class="average-subText">
+                                        <span class="subText-heading">Best Price to Trade</span>
+                                    </div>
+                                    <div class="average-heading" style="padding-bottom: 10px;">₹ 38,76,899</div>
+                                    <div class="average-subText">Average BTC/INR net price including commission</div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="average-header-maintext color-green">2.83 %</div>
+                                <div class="average-header-subHeading">1 Day</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="average-header-maintext color-green">3.4 %</div>
+                                <div class="average-header-subHeading">7 Days</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fiat-crypto-table table-responsive" style="margin: 0px auto;">
+                        <table class="table-display text-center table-borderless">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">#</span>
+                                    </h4>
+                                </th>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">Platform</span>
+                                    </h4>
+                                </th>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">Last Traded Price</span>
+                                    </h4>
+                                </th>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">Buy / Sell Price</span>
+                                    </h4>
+                                </th>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">Volume</span>
+                                    </h4>
+                                </th>
+                                <th>
+                                    <h4>
+                                        <span class="pointer">Base_Unit</span>
+                                    </h4>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <h4 class="table-text">1</h4>
+                                </td>
+                                <td class="align-middle">
+                                    <a target="_blank" href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&amp;utm_medium=affiliate&amp;utm_campaign=regnow-btn" class="tg-link">
+                                    <h4 class="table-text">
+                                        <img src="./images/wazirX.png" class="exchange-logo">
+                                        <span class="exchange-name ">WazirX</span>
+                                    </h4>
+                                </a>
+                                </td>
+                                <td class="align-middle">
+                                    <h4 class="table-text">₹ 37,98,000</h4>
+                                </td>
+                                <td class="align-middle">
+                                    <h4 class="table-text">
+                                        <span>₹ 37,75,241 / ₹ 37,98,000</span>
+                                    </h4>
+                                </td>
+                                <td class="align-middle">
+                                    <h4 class="table-text color-red">-2.04 %</h4>
+                                </td>
+                                <td class="align-middle"><h4 class="table-text color-red">▼ ₹ 78,899</h4>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="d-flex align-items-center text-center">
+                        <div class="footer-text">Copyright © 2019</div>
+                        <div class="footer-text">HodlInfo.com</div>
+                        <div class="footer-text pointer" style="margin-left: auto;">
+                            <a href="mailto:support@hodlinfo.com" class="footer-text-link">Support</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center" id="bottom">
+        <button class="add-button btn btn-outline-info" style="display: block;">Add hodlinfo to home screen</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
